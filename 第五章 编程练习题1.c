@@ -13,3 +13,4 @@ for(scminute = 1;scminute > 0;){
    printf("%d hour %d minute\n",hour,minute);
 
 }
+}
