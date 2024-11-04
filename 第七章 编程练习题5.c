@@ -18,5 +18,6 @@ int main(){
             break;
         }
     }
+
    printf("\n共改变了%d次",count);
 }
