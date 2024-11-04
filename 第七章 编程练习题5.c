@@ -14,7 +14,7 @@ int main(){
             printf("!");count++;
             break;
             default:
-            printf("%c",ch);
+            putchar(ch);
             break;
         }
     }
