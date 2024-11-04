@@ -18,5 +18,5 @@ int main(){
             break;
         }
     }
-   printf("共改变了%d次",count);
+   printf("\n共改变了%d次",count);
 }
