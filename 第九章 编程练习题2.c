@@ -14,6 +14,7 @@ void chline(char ch,int i,int j){
 int main(void)
 {
     char ch;
+    printf("请分别输入要打印的字符及打印几行几列：");
     scanf("%c",&ch);
     int i,j;
     scanf("%d %d",&i,&j);
