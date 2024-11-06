@@ -23,7 +23,7 @@ double pow(double a,int pownumber,double mid){
             return pow(a,++pownumber,mid);
         }
         else
-        return 1/mid * 1/a;
+        return 1/(mid * a);
 
     }
 
