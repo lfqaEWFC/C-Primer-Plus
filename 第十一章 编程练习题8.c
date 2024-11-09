@@ -37,8 +37,6 @@ int main(){
         printf("请输入要查找的字符串(输入回车以停止):\n");
         scanf("%s",ch);
         getchar();
-        if(*ch=='\n')
-        break;
         printf("请输入一串小于等于100个字符的字符串:\n");
         char str[100];
         fgets(str,100,stdin);
