@@ -16,13 +16,14 @@ void word_malloc(void){
         scanf("%s",tem);
         word[i]=(char*)malloc(strlen(tem)+1);
         strcpy(word[i],tem);
-        
+        free(tem);
     }
     printf("Here are your words:\n");
     for(j = 0;j<a;j++){
         printf("%s",word[j]);
         printf("\n");
     }
+
     free(word);
     
 }
