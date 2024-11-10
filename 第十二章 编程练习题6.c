@@ -1,23 +1,22 @@
 #include<stdio.h>
+#include<stdlib.h>
 int* count_rand(int*arr){
 
-    int i,count=0;
+    int i;
     
     for(i=0;i<1000;i++){
         arr[i]=rand()%10+1;
-        count++;
-        if(count%10==0){
-            srand();
         }
 
-    }
     return arr;
-
+    srand(rand());
 }
 
 int main(){
 
     int arr[1000];
+    int count = 0;
+    while(count<10){
     count_rand(arr);
     int i;
     int count1=0;
@@ -65,5 +64,7 @@ int main(){
 
         }
     }
-    printf("10个数字出现的次数分别是:%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t",count1,count2,count3,count4,count5,count6,count7,count8,count9,count10);
+    count++;
+    printf("#%d:\n10个数字出现的次数分别是:\n%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t\n",count,count1,count2,count3,count4,count5,count6,count7,count8,count9,count10);
+    }
 }
