@@ -17,7 +17,7 @@ void my_rand(void){
         }
     }
     for(i=0;i<100;i++){
-        printf("%d\t",arr[i]);
+        printf("%d  ",arr[i]);
     }
 }
 
